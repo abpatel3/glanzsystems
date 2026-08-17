@@ -61,6 +61,24 @@
   }
 }
 
+/* Responsive Viewport-Aware Hero Height Calculation (Header + Hero ≈ 90-92vh) */
+.hero-viewport-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* Mobile/Tablet (<1024px): Header height is 80px */
+  min-height: calc(88vh - 80px);
+  max-height: calc(92vh - 80px);
+}
+
+@media (min-width: 1024px) {
+  .hero-viewport-section {
+    /* Desktop (>=1024px): Top utility bar (~37px) + Header (80px) = 117px */
+    min-height: calc(88vh - 117px);
+    max-height: calc(92vh - 117px);
+  }
+}
+
 /* Swiper Custom Navigation & Pagination Styling */
 .hero-swiper .swiper-pagination-bullet {
   width: 32px;

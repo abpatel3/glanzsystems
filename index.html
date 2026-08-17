@@ -211,30 +211,28 @@
         <i data-lucide="arrow-right" class="w-4 h-4"></i>
       </a>
     </div>
-  </aside>
-
+  </as  <!-- ========================================================================= -->
+  <!-- HERO SLIDER SECTION (4 Swiper Slides — Viewport-Aware Responsive Fit) -->
   <!-- ========================================================================= -->
-  <!-- HERO SLIDER SECTION (4 Swiper Slides — Brochure Content + Authentic Industrial Look) -->
-  <!-- ========================================================================= -->
-  <section class="relative bg-glanz-surface-warm border-b border-glanz-border overflow-hidden">
+  <section id="hero" class="relative bg-glanz-surface-warm border-b border-glanz-border overflow-hidden hero-viewport-section">
 
     <!-- Subtle Engineering Dot Grid Backdrop -->
     <div class="absolute inset-0 bg-industrial-grid opacity-75 pointer-events-none"></div>
 
-    <div class="hero-swiper swiper w-full">
-      <div class="swiper-wrapper">
+    <div class="hero-swiper swiper w-full flex-1 flex flex-col justify-between min-h-0">
+      <div class="swiper-wrapper flex-1 min-h-0">
 
         <!-- =================================================================== -->
         <!-- SLIDE 1: Engineering Intelligent Automation -->
         <!-- =================================================================== -->
-        <div class="swiper-slide py-12 lg:py-20">
-          <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
+        <div class="swiper-slide py-3 sm:py-4 lg:py-5 flex flex-col justify-center h-full min-h-0">
+          <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 my-auto">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-5 sm:gap-6 lg:gap-8 xl:gap-12 items-center">
 
               <!-- Left Column: Content -->
-              <div class="lg:col-span-6 space-y-6">
+              <div class="lg:col-span-6 space-y-2.5 sm:space-y-3 lg:space-y-4 xl:space-y-5">
                 <div
-                  class="slide-eyebrow inline-flex items-center gap-2 px-3 py-1.5 rounded-md bg-white border border-glanz-border shadow-industrial-sm">
+                  class="slide-eyebrow inline-flex items-center gap-2 px-2.5 py-1 rounded-md bg-white border border-glanz-border shadow-industrial-sm">
                   <span class="inline-block w-2 h-2 rounded-full bg-glanz-lime"></span>
                   <span class="font-mono text-xs font-semibold text-glanz-charcoal-900 tracking-wide uppercase">
                     Engineering Intelligent Automation
@@ -242,31 +240,31 @@
                 </div>
 
                 <h1
-                  class="slide-headline font-display font-extrabold text-3xl sm:text-4xl md:text-5xl text-glanz-charcoal-950 tracking-tight leading-[1.15]">
-                  Complete Industrial Automation & Multi-Brand Drive Systems
+                  class="slide-headline font-display font-extrabold text-2xl sm:text-3xl md:text-4xl lg:text-4xl xl:text-5xl text-glanz-charcoal-950 tracking-tight leading-[1.15]">
+                  Complete Industrial Automation &amp; Multi-Brand Drive Systems
                 </h1>
 
-                <p class="slide-text text-glanz-charcoal-600 text-base sm:text-lg leading-relaxed max-w-xl font-normal">
+                <p class="slide-text text-glanz-charcoal-600 text-sm sm:text-base lg:text-lg leading-snug sm:leading-relaxed max-w-xl font-normal line-clamp-3 sm:line-clamp-none">
                   Established in 2013 in Ahmedabad, Glanz Systems delivers end-to-end industrial automation —
                   specializing in Siemens automation systems, VFD integration, servo motion control, and turnkey machine
                   engineering.
                 </p>
 
-                <div class="slide-ctas pt-2 flex flex-wrap items-center gap-4">
+                <div class="slide-ctas pt-1 flex flex-wrap items-center gap-3 sm:gap-4">
                   <a href="#solutions"
-                    class="inline-flex items-center gap-2.5 px-6 py-3.5 rounded-xl bg-glanz-lime hover:bg-glanz-lime-hover text-glanz-charcoal-950 font-sans font-bold text-sm shadow-lime-button transition-all hover:-translate-y-0.5 cursor-pointer">
+                    class="inline-flex items-center gap-2 px-4 sm:px-5 lg:px-6 py-2.5 sm:py-3 rounded-xl bg-glanz-lime hover:bg-glanz-lime-hover text-glanz-charcoal-950 font-sans font-bold text-xs sm:text-sm shadow-lime-button transition-all hover:-translate-y-0.5 cursor-pointer">
                     <span>Explore Solutions</span>
                     <i data-lucide="arrow-right" class="w-4 h-4"></i>
                   </a>
                   <a href="#contact"
-                    class="inline-flex items-center gap-2.5 px-6 py-3.5 rounded-xl bg-white hover:bg-glanz-surface-gray text-glanz-charcoal-900 border border-glanz-border-strong font-sans font-semibold text-sm shadow-industrial-sm transition-all hover:-translate-y-0.5 cursor-pointer">
+                    class="inline-flex items-center gap-2 px-4 sm:px-5 lg:px-6 py-2.5 sm:py-3 rounded-xl bg-white hover:bg-glanz-surface-gray text-glanz-charcoal-900 border border-glanz-border-strong font-sans font-semibold text-xs sm:text-sm shadow-industrial-sm transition-all hover:-translate-y-0.5 cursor-pointer">
                     <span>Request a Quote</span>
                   </a>
                 </div>
 
                 <!-- 3 Compact Trust Badges -->
                 <div
-                  class="slide-trust pt-4 border-t border-glanz-border flex flex-wrap items-center gap-x-6 gap-y-2.5 text-xs text-glanz-charcoal-700 font-medium">
+                  class="slide-trust pt-2.5 sm:pt-3 border-t border-glanz-border flex flex-wrap items-center gap-x-4 sm:gap-x-6 gap-y-1.5 text-xs text-glanz-charcoal-700 font-medium">
                   <div class="flex items-center gap-1.5">
                     <i data-lucide="check-circle-2" class="w-4 h-4 text-glanz-emerald"></i>
                     <span class="font-semibold text-glanz-charcoal-900">Multi-Brand Automation</span>
@@ -285,10 +283,10 @@
               <!-- Right Column: Visual -->
               <div class="lg:col-span-6 relative">
                 <div
-                  class="slide-visual relative rounded-2xl overflow-hidden border border-glanz-border shadow-industrial-lg bg-glanz-charcoal-950">
+                  class="slide-visual relative rounded-2xl overflow-hidden border border-glanz-border shadow-industrial-lg bg-glanz-charcoal-950 max-h-[180px] sm:max-h-[240px] md:max-h-[300px] lg:max-h-[340px] xl:max-h-[380px] flex items-center justify-center">
                   <img src="./assets/images/hero-slide-1.jpg"
                     alt="Industrial Automation Control Panel with PLCs, Variable Frequency Drives and Wiring Harness"
-                    class="w-full h-auto aspect-4/3 sm:aspect-16/11 object-cover object-center" loading="eager" />
+                    class="w-full h-full max-h-[180px] sm:max-h-[240px] md:max-h-[300px] lg:max-h-[340px] xl:max-h-[380px] object-cover object-center" loading="eager" />
                   <div
                     class="absolute inset-0 bg-gradient-to-t from-glanz-charcoal-950/40 via-transparent to-transparent pointer-events-none">
                   </div>
@@ -316,14 +314,14 @@
         <!-- =================================================================== -->
         <!-- SLIDE 2: Control Panel Manufacturing -->
         <!-- =================================================================== -->
-        <div class="swiper-slide py-12 lg:py-20">
-          <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
+        <div class="swiper-slide py-3 sm:py-4 lg:py-5 flex flex-col justify-center h-full min-h-0">
+          <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 my-auto">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-5 sm:gap-6 lg:gap-8 xl:gap-12 items-center">
 
               <!-- Left Column: Content -->
-              <div class="lg:col-span-6 space-y-6">
+              <div class="lg:col-span-6 space-y-2.5 sm:space-y-3 lg:space-y-4 xl:space-y-5">
                 <div
-                  class="slide-eyebrow inline-flex items-center gap-2 px-3 py-1.5 rounded-md bg-white border border-glanz-border shadow-industrial-sm">
+                  class="slide-eyebrow inline-flex items-center gap-2 px-2.5 py-1 rounded-md bg-white border border-glanz-border shadow-industrial-sm">
                   <span class="inline-block w-2 h-2 rounded-full bg-glanz-lime"></span>
                   <span class="font-mono text-xs font-semibold text-glanz-charcoal-900 tracking-wide uppercase">
                     Control Panel Manufacturing
@@ -331,33 +329,33 @@
                 </div>
 
                 <h2
-                  class="slide-headline font-display font-extrabold text-3xl sm:text-4xl md:text-5xl text-glanz-charcoal-950 tracking-tight leading-[1.15]">
-                  Custom DRIVE, PLC, MCC, PCC & APFC Industrial Panels
+                  class="slide-headline font-display font-extrabold text-2xl sm:text-3xl md:text-4xl lg:text-4xl xl:text-5xl text-glanz-charcoal-950 tracking-tight leading-[1.15]">
+                  Custom DRIVE, PLC, MCC, PCC &amp; APFC Industrial Panels
                 </h2>
 
-                <p class="slide-text text-glanz-charcoal-600 text-base sm:text-lg leading-relaxed max-w-xl font-normal">
+                <p class="slide-text text-glanz-charcoal-600 text-sm sm:text-base lg:text-lg leading-snug sm:leading-relaxed max-w-xl font-normal line-clamp-3 sm:line-clamp-none">
                   Precision engineered for reliable, safe industrial operation. We design and manufacture custom-built
                   control panels tailored for SPM machinery, continuous manufacturing, and harsh process environments.
                 </p>
 
-                <div class="slide-ctas pt-2 flex flex-wrap items-center gap-4">
+                <div class="slide-ctas pt-1 flex flex-wrap items-center gap-3 sm:gap-4">
                   <a href="#solutions"
-                    class="inline-flex items-center gap-2.5 px-6 py-3.5 rounded-xl bg-glanz-lime hover:bg-glanz-lime-hover text-glanz-charcoal-950 font-sans font-bold text-sm shadow-lime-button transition-all hover:-translate-y-0.5 cursor-pointer">
+                    class="inline-flex items-center gap-2 px-4 sm:px-5 lg:px-6 py-2.5 sm:py-3 rounded-xl bg-glanz-lime hover:bg-glanz-lime-hover text-glanz-charcoal-950 font-sans font-bold text-xs sm:text-sm shadow-lime-button transition-all hover:-translate-y-0.5 cursor-pointer">
                     <span>View Panel Solutions</span>
                     <i data-lucide="arrow-right" class="w-4 h-4"></i>
                   </a>
                   <a href="#contact"
-                    class="inline-flex items-center gap-2.5 px-6 py-3.5 rounded-xl bg-white hover:bg-glanz-surface-gray text-glanz-charcoal-900 border border-glanz-border-strong font-sans font-semibold text-sm shadow-industrial-sm transition-all hover:-translate-y-0.5 cursor-pointer">
+                    class="inline-flex items-center gap-2 px-4 sm:px-5 lg:px-6 py-2.5 sm:py-3 rounded-xl bg-white hover:bg-glanz-surface-gray text-glanz-charcoal-900 border border-glanz-border-strong font-sans font-semibold text-xs sm:text-sm shadow-industrial-sm transition-all hover:-translate-y-0.5 cursor-pointer">
                     <span>Request a Quote</span>
                   </a>
                 </div>
 
                 <!-- 3 Compact Trust Badges -->
                 <div
-                  class="slide-trust pt-4 border-t border-glanz-border flex flex-wrap items-center gap-x-6 gap-y-2.5 text-xs text-glanz-charcoal-700 font-medium">
+                  class="slide-trust pt-2.5 sm:pt-3 border-t border-glanz-border flex flex-wrap items-center gap-x-4 sm:gap-x-6 gap-y-1.5 text-xs text-glanz-charcoal-700 font-medium">
                   <div class="flex items-center gap-1.5">
                     <i data-lucide="check-circle-2" class="w-4 h-4 text-glanz-emerald"></i>
-                    <span class="font-semibold text-glanz-charcoal-900">DRIVE, PLC, MCC & PCC</span>
+                    <span class="font-semibold text-glanz-charcoal-900">DRIVE, PLC, MCC &amp; PCC</span>
                   </div>
                   <div class="flex items-center gap-1.5">
                     <i data-lucide="check-circle-2" class="w-4 h-4 text-glanz-emerald"></i>
@@ -373,10 +371,10 @@
               <!-- Right Column: Visual -->
               <div class="lg:col-span-6 relative">
                 <div
-                  class="slide-visual relative rounded-2xl overflow-hidden border border-glanz-border shadow-industrial-lg bg-glanz-charcoal-950">
+                  class="slide-visual relative rounded-2xl overflow-hidden border border-glanz-border shadow-industrial-lg bg-glanz-charcoal-950 max-h-[180px] sm:max-h-[240px] md:max-h-[300px] lg:max-h-[340px] xl:max-h-[380px] flex items-center justify-center">
                   <img src="./assets/images/hero-slide-2.jpg"
                     alt="Industrial Electrical Control Panel Assembly and Testing Workshop"
-                    class="w-full h-auto aspect-4/3 sm:aspect-16/11 object-cover object-center" loading="lazy" />
+                    class="w-full h-full max-h-[180px] sm:max-h-[240px] md:max-h-[300px] lg:max-h-[340px] xl:max-h-[380px] object-cover object-center" loading="lazy" />
                   <div
                     class="absolute inset-0 bg-gradient-to-t from-glanz-charcoal-950/40 via-transparent to-transparent pointer-events-none">
                   </div>
@@ -404,45 +402,45 @@
         <!-- =================================================================== -->
         <!-- SLIDE 3: PLC / HMI / SCADA & Smart IoT -->
         <!-- =================================================================== -->
-        <div class="swiper-slide py-12 lg:py-20">
-          <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
+        <div class="swiper-slide py-3 sm:py-4 lg:py-5 flex flex-col justify-center h-full min-h-0">
+          <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 my-auto">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-5 sm:gap-6 lg:gap-8 xl:gap-12 items-center">
 
               <!-- Left Column: Content -->
-              <div class="lg:col-span-6 space-y-6">
+              <div class="lg:col-span-6 space-y-2.5 sm:space-y-3 lg:space-y-4 xl:space-y-5">
                 <div
-                  class="slide-eyebrow inline-flex items-center gap-2 px-3 py-1.5 rounded-md bg-white border border-glanz-border shadow-industrial-sm">
+                  class="slide-eyebrow inline-flex items-center gap-2 px-2.5 py-1 rounded-md bg-white border border-glanz-border shadow-industrial-sm">
                   <span class="inline-block w-2 h-2 rounded-full bg-glanz-lime"></span>
                   <span class="font-mono text-xs font-semibold text-glanz-charcoal-900 tracking-wide uppercase">
-                    PLC / HMI / SCADA & IIoT
+                    PLC / HMI / SCADA &amp; IIoT
                   </span>
                 </div>
 
                 <h2
-                  class="slide-headline font-display font-extrabold text-3xl sm:text-4xl md:text-5xl text-glanz-charcoal-950 tracking-tight leading-[1.15]">
-                  Real-Time Process Monitoring, SCADA & Smart Connectivity
+                  class="slide-headline font-display font-extrabold text-2xl sm:text-3xl md:text-4xl lg:text-4xl xl:text-5xl text-glanz-charcoal-950 tracking-tight leading-[1.15]">
+                  Real-Time Process Monitoring, SCADA &amp; Smart Connectivity
                 </h2>
 
-                <p class="slide-text text-glanz-charcoal-600 text-base sm:text-lg leading-relaxed max-w-xl font-normal">
+                <p class="slide-text text-glanz-charcoal-600 text-sm sm:text-base lg:text-lg leading-snug sm:leading-relaxed max-w-xl font-normal line-clamp-3 sm:line-clamp-none">
                   Advanced PLC programming, intuitive HMI operator interfaces, centralized SCADA systems, and industrial
                   IoT connectivity for real-time telemetry, alarm management, and predictive maintenance.
                 </p>
 
-                <div class="slide-ctas pt-2 flex flex-wrap items-center gap-4">
+                <div class="slide-ctas pt-1 flex flex-wrap items-center gap-3 sm:gap-4">
                   <a href="#solutions"
-                    class="inline-flex items-center gap-2.5 px-6 py-3.5 rounded-xl bg-glanz-lime hover:bg-glanz-lime-hover text-glanz-charcoal-950 font-sans font-bold text-sm shadow-lime-button transition-all hover:-translate-y-0.5 cursor-pointer">
-                    <span>Explore SCADA & IoT</span>
+                    class="inline-flex items-center gap-2 px-4 sm:px-5 lg:px-6 py-2.5 sm:py-3 rounded-xl bg-glanz-lime hover:bg-glanz-lime-hover text-glanz-charcoal-950 font-sans font-bold text-xs sm:text-sm shadow-lime-button transition-all hover:-translate-y-0.5 cursor-pointer">
+                    <span>Explore SCADA &amp; IoT</span>
                     <i data-lucide="arrow-right" class="w-4 h-4"></i>
                   </a>
                   <a href="#contact"
-                    class="inline-flex items-center gap-2.5 px-6 py-3.5 rounded-xl bg-white hover:bg-glanz-surface-gray text-glanz-charcoal-900 border border-glanz-border-strong font-sans font-semibold text-sm shadow-industrial-sm transition-all hover:-translate-y-0.5 cursor-pointer">
+                    class="inline-flex items-center gap-2 px-4 sm:px-5 lg:px-6 py-2.5 sm:py-3 rounded-xl bg-white hover:bg-glanz-surface-gray text-glanz-charcoal-900 border border-glanz-border-strong font-sans font-semibold text-xs sm:text-sm shadow-industrial-sm transition-all hover:-translate-y-0.5 cursor-pointer">
                     <span>Request a Quote</span>
                   </a>
                 </div>
 
                 <!-- 3 Compact Trust Badges -->
                 <div
-                  class="slide-trust pt-4 border-t border-glanz-border flex flex-wrap items-center gap-x-6 gap-y-2.5 text-xs text-glanz-charcoal-700 font-medium">
+                  class="slide-trust pt-2.5 sm:pt-3 border-t border-glanz-border flex flex-wrap items-center gap-x-4 sm:gap-x-6 gap-y-1.5 text-xs text-glanz-charcoal-700 font-medium">
                   <div class="flex items-center gap-1.5">
                     <i data-lucide="check-circle-2" class="w-4 h-4 text-glanz-emerald"></i>
                     <span class="font-semibold text-glanz-charcoal-900">Real-Time Process Control</span>
@@ -461,10 +459,10 @@
               <!-- Right Column: Visual -->
               <div class="lg:col-span-6 relative">
                 <div
-                  class="slide-visual relative rounded-2xl overflow-hidden border border-glanz-border shadow-industrial-lg bg-glanz-charcoal-950">
+                  class="slide-visual relative rounded-2xl overflow-hidden border border-glanz-border shadow-industrial-lg bg-glanz-charcoal-950 max-h-[180px] sm:max-h-[240px] md:max-h-[300px] lg:max-h-[340px] xl:max-h-[380px] flex items-center justify-center">
                   <img src="./assets/images/hero-slide-3.jpg"
                     alt="Industrial Plant SCADA Control Room with Real-Time Automation Telemetry Monitors"
-                    class="w-full h-auto aspect-4/3 sm:aspect-16/11 object-cover object-center" loading="lazy" />
+                    class="w-full h-full max-h-[180px] sm:max-h-[240px] md:max-h-[300px] lg:max-h-[340px] xl:max-h-[380px] object-cover object-center" loading="lazy" />
                   <div
                     class="absolute inset-0 bg-gradient-to-t from-glanz-charcoal-950/40 via-transparent to-transparent pointer-events-none">
                   </div>
@@ -492,14 +490,14 @@
         <!-- =================================================================== -->
         <!-- SLIDE 4: Complete Automation Engineering & Lifecycle Services -->
         <!-- =================================================================== -->
-        <div class="swiper-slide py-12 lg:py-20">
-          <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
+        <div class="swiper-slide py-3 sm:py-4 lg:py-5 flex flex-col justify-center h-full min-h-0">
+          <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 my-auto">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-5 sm:gap-6 lg:gap-8 xl:gap-12 items-center">
 
               <!-- Left Column: Content -->
-              <div class="lg:col-span-6 space-y-6">
+              <div class="lg:col-span-6 space-y-2.5 sm:space-y-3 lg:space-y-4 xl:space-y-5">
                 <div
-                  class="slide-eyebrow inline-flex items-center gap-2 px-3 py-1.5 rounded-md bg-white border border-glanz-border shadow-industrial-sm">
+                  class="slide-eyebrow inline-flex items-center gap-2 px-2.5 py-1 rounded-md bg-white border border-glanz-border shadow-industrial-sm">
                   <span class="inline-block w-2 h-2 rounded-full bg-glanz-lime"></span>
                   <span class="font-mono text-xs font-semibold text-glanz-charcoal-900 tracking-wide uppercase">
                     Complete Automation Engineering
@@ -507,37 +505,37 @@
                 </div>
 
                 <h2
-                  class="slide-headline font-display font-extrabold text-3xl sm:text-4xl md:text-5xl text-glanz-charcoal-950 tracking-tight leading-[1.15]">
-                  Turnkey Projects, Retrofit & Lifecycle Field Support
+                  class="slide-headline font-display font-extrabold text-2xl sm:text-3xl md:text-4xl lg:text-4xl xl:text-5xl text-glanz-charcoal-950 tracking-tight leading-[1.15]">
+                  Turnkey Projects, Retrofit &amp; Lifecycle Field Support
                 </h2>
 
-                <p class="slide-text text-glanz-charcoal-600 text-base sm:text-lg leading-relaxed max-w-xl font-normal">
+                <p class="slide-text text-glanz-charcoal-600 text-sm sm:text-base lg:text-lg leading-snug sm:leading-relaxed max-w-xl font-normal line-clamp-3 sm:line-clamp-none">
                   Providing complete engineering support from initial concept and design to software development,
                   installation, on-site commissioning, legacy plant retrofitting, and long-term after-sales maintenance.
                 </p>
 
-                <div class="slide-ctas pt-2 flex flex-wrap items-center gap-4">
+                <div class="slide-ctas pt-1 flex flex-wrap items-center gap-3 sm:gap-4">
                   <a href="#services"
-                    class="inline-flex items-center gap-2.5 px-6 py-3.5 rounded-xl bg-glanz-lime hover:bg-glanz-lime-hover text-glanz-charcoal-950 font-sans font-bold text-sm shadow-lime-button transition-all hover:-translate-y-0.5 cursor-pointer">
+                    class="inline-flex items-center gap-2 px-4 sm:px-5 lg:px-6 py-2.5 sm:py-3 rounded-xl bg-glanz-lime hover:bg-glanz-lime-hover text-glanz-charcoal-950 font-sans font-bold text-xs sm:text-sm shadow-lime-button transition-all hover:-translate-y-0.5 cursor-pointer">
                     <span>Our Engineering Services</span>
                     <i data-lucide="arrow-right" class="w-4 h-4"></i>
                   </a>
                   <a href="#contact"
-                    class="inline-flex items-center gap-2.5 px-6 py-3.5 rounded-xl bg-white hover:bg-glanz-surface-gray text-glanz-charcoal-900 border border-glanz-border-strong font-sans font-semibold text-sm shadow-industrial-sm transition-all hover:-translate-y-0.5 cursor-pointer">
+                    class="inline-flex items-center gap-2 px-4 sm:px-5 lg:px-6 py-2.5 sm:py-3 rounded-xl bg-white hover:bg-glanz-surface-gray text-glanz-charcoal-900 border border-glanz-border-strong font-sans font-semibold text-xs sm:text-sm shadow-industrial-sm transition-all hover:-translate-y-0.5 cursor-pointer">
                     <span>Request a Quote</span>
                   </a>
                 </div>
 
                 <!-- 3 Compact Trust Badges -->
                 <div
-                  class="slide-trust pt-4 border-t border-glanz-border flex flex-wrap items-center gap-x-6 gap-y-2.5 text-xs text-glanz-charcoal-700 font-medium">
+                  class="slide-trust pt-2.5 sm:pt-3 border-t border-glanz-border flex flex-wrap items-center gap-x-4 sm:gap-x-6 gap-y-1.5 text-xs text-glanz-charcoal-700 font-medium">
                   <div class="flex items-center gap-1.5">
                     <i data-lucide="check-circle-2" class="w-4 h-4 text-glanz-emerald"></i>
                     <span class="font-semibold text-glanz-charcoal-900">Design to Commissioning</span>
                   </div>
                   <div class="flex items-center gap-1.5">
                     <i data-lucide="check-circle-2" class="w-4 h-4 text-glanz-emerald"></i>
-                    <span class="font-semibold text-glanz-charcoal-900">Retrofit & Modernization</span>
+                    <span class="font-semibold text-glanz-charcoal-900">Retrofit &amp; Modernization</span>
                   </div>
                   <div class="flex items-center gap-1.5">
                     <i data-lucide="check-circle-2" class="w-4 h-4 text-glanz-emerald"></i>
@@ -549,10 +547,10 @@
               <!-- Right Column: Visual -->
               <div class="lg:col-span-6 relative">
                 <div
-                  class="slide-visual relative rounded-2xl overflow-hidden border border-glanz-border shadow-industrial-lg bg-glanz-charcoal-950">
+                  class="slide-visual relative rounded-2xl overflow-hidden border border-glanz-border shadow-industrial-lg bg-glanz-charcoal-950 max-h-[180px] sm:max-h-[240px] md:max-h-[300px] lg:max-h-[340px] xl:max-h-[380px] flex items-center justify-center">
                   <img src="./assets/images/hero-slide-4.jpg"
                     alt="Industrial Automation Engineer Commissioning and Testing PLC Control Cabinet"
-                    class="w-full h-auto aspect-4/3 sm:aspect-16/11 object-cover object-center" loading="lazy" />
+                    class="w-full h-full max-h-[180px] sm:max-h-[240px] md:max-h-[300px] lg:max-h-[340px] xl:max-h-[380px] object-cover object-center" loading="lazy" />
                   <div
                     class="absolute inset-0 bg-gradient-to-t from-glanz-charcoal-950/40 via-transparent to-transparent pointer-events-none">
                   </div>
@@ -569,7 +567,7 @@
                   <span class="w-1.5 h-1.5 rounded-full bg-glanz-emerald"></span>
                   <span
                     class="font-mono text-[11px] font-semibold tracking-wider uppercase text-glanz-charcoal-900">RETROFIT
-                    & MODERNIZATION</span>
+                    &amp; MODERNIZATION</span>
                 </div>
               </div>
 
@@ -582,7 +580,7 @@
       <!-- =================================================================== -->
       <!-- SLIDER CONTROLS (Bottom Bar: Pagination Bars + Prev/Next Arrows) -->
       <!-- =================================================================== -->
-      <div class="container mx-auto px-4 sm:px-6 lg:px-8 pb-8 pt-2 flex items-center justify-between relative z-20">
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-2 sm:py-3 flex items-center justify-between relative z-20">
 
         <!-- Swiper Pagination Bullets (Custom Lime & Slate Bars) -->
         <div class="hero-pagination !relative !bottom-0 !w-auto flex items-center gap-2"></div>
@@ -590,18 +588,18 @@
         <!-- Navigation Arrows (Compact Industrial Style) -->
         <div class="flex items-center gap-2">
           <button type="button"
-            class="hero-btn-prev hero-nav-btn w-10 h-10 rounded-xl bg-white border border-glanz-border shadow-industrial-sm flex items-center justify-center text-glanz-charcoal-800 cursor-pointer focus:outline-none"
+            class="hero-btn-prev hero-nav-btn w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-white border border-glanz-border shadow-industrial-sm flex items-center justify-center text-glanz-charcoal-800 cursor-pointer focus:outline-none"
             aria-label="Previous Slide">
             <i data-lucide="chevron-left" class="w-5 h-5"></i>
           </button>
           <button type="button"
-            class="hero-btn-next hero-nav-btn w-10 h-10 rounded-xl bg-white border border-glanz-border shadow-industrial-sm flex items-center justify-center text-glanz-charcoal-800 cursor-pointer focus:outline-none"
+            class="hero-btn-next hero-nav-btn w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-white border border-glanz-border shadow-industrial-sm flex items-center justify-center text-glanz-charcoal-800 cursor-pointer focus:outline-none"
             aria-label="Next Slide">
             <i data-lucide="chevron-right" class="w-5 h-5"></i>
           </button>
-        </div>
-
       </div>
+
+    </div>
 
   </section>
 
