@@ -25,9 +25,11 @@ glanzsystems/
 │       └── animations.js
 ├── assets/
 │   ├── images/
-│   ├── icons/
-│   └── logo/
-│       └── logo.jpg
+│   │   ├── logo/
+│   │   │   └── logo.jpg
+│   │   └── client/
+│   ├── css/
+│   └── js/
 └── README.md
 ```
 
