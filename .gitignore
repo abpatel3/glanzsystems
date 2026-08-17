@@ -1,0 +1,26 @@
+# Dependencies
+node_modules/
+/.pnp
+.pnp.js
+
+# Build outputs & temp folders
+dist/
+build/
+.tempmediaStorage/
+*.tmp
+*.log
+
+# Large binary files exceeding GitHub 100MB limit
+brochure.pdf
+
+# Editor & OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.swp
+
+# Environment variables
+.env
+.env.local
+.env.*.local

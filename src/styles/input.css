@@ -1,0 +1,170 @@
+@import "tailwindcss";
+
+@theme {
+  /* Glanz Brand Identity Accents (Derived from Logo) */
+  --color-glanz-lime: #8ce024;
+  --color-glanz-lime-hover: #7acd1c;
+  --color-glanz-lime-dark: #68a816;
+  --color-glanz-lime-50: #f7fee7;
+  --color-glanz-lime-100: #ecfccb;
+
+  --color-glanz-emerald: #00b050;
+  --color-glanz-emerald-dark: #008a3e;
+  --color-glanz-emerald-50: #ecfdf5;
+
+  /* Industrial Clean Light Backgrounds & Surfaces (70%) */
+  --color-glanz-bg: #ffffff;
+  --color-glanz-surface-warm: #fafaf9;
+  --color-glanz-surface-gray: #f8fafc;
+  --color-glanz-surface-muted: #f1f5f9;
+  --color-glanz-border: #e2e8f0;
+  --color-glanz-border-light: #f1f5f9;
+  --color-glanz-border-strong: #cbd5e1;
+
+  /* Industrial Typography & Charcoal (20%) */
+  --color-glanz-charcoal-950: #090d14;
+  --color-glanz-charcoal-900: #0f172a;
+  --color-glanz-charcoal-800: #1e293b;
+  --color-glanz-charcoal-700: #334155;
+  --color-glanz-charcoal-600: #475569;
+  --color-glanz-charcoal-500: #64748b;
+  --color-glanz-charcoal-400: #94a3b8;
+
+  /* Updated Typography: Manrope (Headings) + Inter (Body) + JetBrains Mono (Technical) */
+  --font-sans: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-display: 'Manrope', system-ui, -apple-system, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, monospace;
+
+  /* Subtle Industrial Shadows */
+  --shadow-industrial-sm: 0 1px 2px 0 rgba(15, 23, 42, 0.05);
+  --shadow-industrial-md: 0 4px 16px -2px rgba(15, 23, 42, 0.08), 0 2px 4px -2px rgba(15, 23, 42, 0.04);
+  --shadow-industrial-lg: 0 16px 36px -4px rgba(15, 23, 42, 0.12), 0 4px 12px -2px rgba(15, 23, 42, 0.04);
+  --shadow-lime-button: 0 4px 14px 0 rgba(140, 224, 36, 0.35);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-family: var(--font-sans);
+    color: var(--color-glanz-charcoal-700);
+    background-color: var(--color-glanz-bg);
+  }
+
+  body {
+    overflow-x: hidden;
+  }
+
+  /* Ultra-subtle engineering grid texture */
+  .bg-industrial-grid {
+    background-image: radial-gradient(rgba(15, 23, 42, 0.05) 1px, transparent 1px);
+    background-size: 28px 28px;
+  }
+}
+
+/* Swiper Custom Navigation & Pagination Styling */
+.hero-swiper .swiper-pagination-bullet {
+  width: 32px;
+  height: 4px;
+  border-radius: 2px;
+  background-color: #cbd5e1;
+  opacity: 0.7;
+  transition: all 0.3s ease;
+}
+
+.hero-swiper .swiper-pagination-bullet-active {
+  background-color: #8ce024;
+  width: 48px;
+  opacity: 1;
+}
+
+.hero-nav-btn {
+  transition: all 0.2s ease;
+}
+
+.hero-nav-btn:hover {
+  background-color: #0f172a;
+  color: #8ce024;
+}
+
+/* Testimonials Custom Dash / Pill Pagination */
+.testimonials-pagination .swiper-pagination-bullet {
+  width: 32px;
+  height: 5px;
+  border-radius: 9999px;
+  background-color: #cbd5e1;
+  opacity: 1;
+  margin: 0 4px !important;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+}
+
+.testimonials-pagination .swiper-pagination-bullet:hover {
+  background-color: #94a3b8;
+}
+
+.testimonials-pagination .swiper-pagination-bullet-active {
+  width: 44px;
+  background-color: #8ce024;
+}
+
+/* Testimonials Strict Equal Height */
+.testimonials-swiper .swiper-wrapper {
+  display: flex !important;
+  align-items: stretch !important;
+}
+
+.testimonials-swiper .swiper-slide {
+  height: auto !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-self: stretch !important;
+}
+
+.testimonials-swiper .testimonial-card,
+.testimonials-swiper .swiper-slide > div {
+  height: 100% !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: space-between !important;
+  flex: 1 1 auto !important;
+}
+
+/* Infinite Seamless Client Logo Marquee */
+@keyframes marquee-scroll {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.marquee-track {
+  display: flex;
+  width: max-content;
+  animation: marquee-scroll 28s linear infinite;
+  will-change: transform;
+}
+
+.marquee-container:hover .marquee-track {
+  animation-play-state: paused;
+}
+
+/* Clients Smooth Infinite Linear Swiper */
+.clients-swiper .swiper-wrapper {
+  transition-timing-function: linear !important;
+  will-change: transform;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .marquee-track,
+  .clients-swiper .swiper-wrapper {
+    animation: none;
+    overflow-x: auto;
+  }
+}
+
+
+
+
+
