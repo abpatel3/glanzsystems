@@ -577,13 +577,13 @@ document.addEventListener('DOMContentLoaded', () => {
       const isSelected = tab.getAttribute('data-category') === categoryKey;
       tab.setAttribute('aria-selected', isSelected ? 'true' : 'false');
       if (isSelected) {
-        tab.className = 'product-tab-btn px-4 sm:px-6 py-3 rounded-xl font-sans font-semibold text-sm transition-all duration-200 flex items-center gap-2.5 whitespace-nowrap bg-glanz-charcoal-950 text-white shadow-industrial-sm cursor-pointer';
+        tab.className = 'product-tab-btn px-4 sm:px-6 py-3 rounded-xl font-sans font-semibold text-sm transition-all duration-200 flex items-center gap-2.5 whitespace-nowrap bg-glanz-red text-white shadow-industrial-sm cursor-pointer';
         const icon = tab.querySelector('i');
-        if (icon) icon.className = 'w-4 h-4 text-glanz-lime';
+        if (icon) icon.className = 'w-4 h-4 text-white';
       } else {
         tab.className = 'product-tab-btn px-4 sm:px-6 py-3 rounded-xl font-sans font-semibold text-sm transition-all duration-200 flex items-center gap-2.5 whitespace-nowrap bg-glanz-surface-gray text-glanz-charcoal-700 hover:bg-glanz-surface-muted hover:text-glanz-charcoal-950 border border-glanz-border cursor-pointer';
         const icon = tab.querySelector('i');
-        if (icon) icon.className = 'w-4 h-4 text-glanz-emerald';
+        if (icon) icon.className = 'w-4 h-4 text-glanz-red';
       }
     });
 
@@ -607,7 +607,7 @@ document.addEventListener('DOMContentLoaded', () => {
             displayFeatures.innerHTML = data.features
               .map(feat => `
                 <li class="flex items-start gap-2.5">
-                  <i data-lucide="check-circle-2" class="w-4 h-4 text-glanz-emerald shrink-0 mt-0.5"></i>
+                  <i data-lucide="check-circle-2" class="w-4 h-4 text-glanz-red shrink-0 mt-0.5"></i>
                   <span>${feat}</span>
                 </li>
               `)
@@ -638,7 +638,7 @@ document.addEventListener('DOMContentLoaded', () => {
         displayFeatures.innerHTML = data.features
           .map(feat => `
             <li class="flex items-start gap-2.5">
-              <i data-lucide="check-circle-2" class="w-4 h-4 text-glanz-emerald shrink-0 mt-0.5"></i>
+              <i data-lucide="check-circle-2" class="w-4 h-4 text-glanz-red shrink-0 mt-0.5"></i>
               <span>${feat}</span>
             </li>
           `)
