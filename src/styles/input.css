@@ -174,3 +174,14 @@
     overflow-x: auto;
   }
 }
+
+/* Footer High Contrast Bright Red Links & Accents */
+#main-footer a:hover {
+  color: #FF353D !important;
+}
+
+#main-footer a:hover i,
+#main-footer a:hover svg {
+  color: #FF353D !important;
+}
+
