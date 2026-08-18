@@ -577,13 +577,13 @@ document.addEventListener('DOMContentLoaded', () => {
       const isSelected = tab.getAttribute('data-category') === categoryKey;
       tab.setAttribute('aria-selected', isSelected ? 'true' : 'false');
       if (isSelected) {
-        tab.className = 'product-tab-btn px-4 sm:px-6 py-3 rounded-xl font-sans font-semibold text-sm transition-all duration-200 flex items-center gap-2.5 whitespace-nowrap bg-glanz-red text-white shadow-industrial-sm cursor-pointer';
+        tab.className = 'product-tab-btn min-h-[46px] px-5 py-2.5 rounded-xl font-sans font-semibold text-sm sm:text-base transition-all duration-200 flex items-center justify-center gap-2 whitespace-nowrap bg-glanz-red text-white border border-glanz-red shadow-industrial-sm cursor-pointer shrink-0 focus:outline-none focus:ring-2 focus:ring-glanz-red/50';
         const icon = tab.querySelector('i');
-        if (icon) icon.className = 'w-4 h-4 text-white';
+        if (icon) icon.className = 'w-4 h-4 text-white shrink-0';
       } else {
-        tab.className = 'product-tab-btn px-4 sm:px-6 py-3 rounded-xl font-sans font-semibold text-sm transition-all duration-200 flex items-center gap-2.5 whitespace-nowrap bg-glanz-surface-gray text-glanz-charcoal-700 hover:bg-glanz-surface-muted hover:text-glanz-charcoal-950 border border-glanz-border cursor-pointer';
+        tab.className = 'product-tab-btn min-h-[46px] px-5 py-2.5 rounded-xl font-sans font-semibold text-sm sm:text-base transition-all duration-200 flex items-center justify-center gap-2 whitespace-nowrap bg-white text-glanz-charcoal-900 border border-glanz-border hover:bg-glanz-red-50 hover:border-glanz-red cursor-pointer shrink-0 focus:outline-none focus:ring-2 focus:ring-glanz-red/50';
         const icon = tab.querySelector('i');
-        if (icon) icon.className = 'w-4 h-4 text-glanz-red';
+        if (icon) icon.className = 'w-4 h-4 text-glanz-red shrink-0';
       }
     });
 
